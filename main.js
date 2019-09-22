@@ -4,3 +4,11 @@ function getrandom() {
     var random_string = Math.random().toString(32).substring(2, 5) + Math.random().toString(32).substring(2, 5);
     return random_string()
 }
+
+
+
+// Function to 
+
+function geturl(){     
+    var url = document.getElementById(“urlinput”).value;     
+    var protocol_ok = url.startsWith(“http://”) || url.startsWith(“https://”) || url.startsWith(“ftp://”);     if(!protocol_ok){         newurl = “http://”+url;         return newurl;     }else{         return url;     }
